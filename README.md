@@ -1,24 +1,28 @@
-# README
+<h1>NewsApi Fetcher</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h3>Running the App</h3>
 
-Things you may want to cover:
+1. Clone the repo to your local machine.
 
-* Ruby version
+  ```bash
+  $  git clone https://github.com/sofiengwin/newsapi.git
+  ```
 
-* System dependencies
+2. `cd` into the `newsapi` folder.
 
-* Configuration
+  ```bash
+  $  cd newsapi
+  ```
 
-* Database creation
+3. Run bin/setup and voila!, you setup!
 
-* Database initialization
+  ```bash
+  $  touch .env
+  $  rails server
+  ```
 
-* How to run the test suite
+5. Run the tests.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  ```bash
+  $  bundle exec rspec
+  ```
