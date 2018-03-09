@@ -1,0 +1,8 @@
+<h1>The view is been loaded</h1>
+
+<% @news.each do |nws| %>
+  <div>Source: <%= nws['source']['name'] %></div>
+  <div>Author: <%= nws['author'] %></div>
+  <div>Title: <%= nws['title'] %></div>
+  <div>Description: <%= nws['description'] %></div>
+<% end %>
