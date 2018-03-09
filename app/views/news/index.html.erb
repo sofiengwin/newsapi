@@ -1,8 +1,12 @@
 <h1>The view is been loaded</h1>
 
-<% @news.each do |nws| %>
-  <div>Source: <%= nws['source']['name'] %></div>
-  <div>Author: <%= nws['author'] %></div>
-  <div>Title: <%= nws['title'] %></div>
-  <div>Description: <%= nws['description'] %></div>
-<% end %>
+<div class='container'>
+  <% @news.each do |nws| %>
+    <div class='news'>
+    <div><strong>Source:</strong> <%= nws['source']['name'] %></div>
+    <div><strong>Author:</strong> <%= nws['author'] %></div>
+    <div><strong>Title:</strong> <%= nws['title'] %></div>
+    <div><strong>Description:</strong> <%= nws['description'] %></div>
+    </div>
+  <% end %>
+</div>
